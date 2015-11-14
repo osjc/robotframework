@@ -138,6 +138,10 @@ require-yaml, require-docutils, require-lxml, require-screenshot
   Require lxml, docutils, PyYAML, or platform specific screenshot module to
   be installed, respectively. See `Required modules`_ for details.
 
+require-tkinter
+  Require tkinter, Python's de-facto standard GUI (Graphical User Interface)
+  package.
+
 require-et13
   Require ElementTree version 1.3. Automatically excluded when running with
   Python 2.6 or IronPython.

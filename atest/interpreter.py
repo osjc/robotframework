@@ -56,6 +56,10 @@ class Interpreter(object):
             yield 'require-docutils'  # https://github.com/IronLanguages/main/issues/1230
         else:
             yield 'require-ipy'
+        try:
+            import tkinter
+        except ImportError:
+            yield 'require-tkinter'
         for exclude in self._platform_excludes:
             yield exclude
 
