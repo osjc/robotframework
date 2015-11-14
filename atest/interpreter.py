@@ -60,6 +60,10 @@ class Interpreter(object):
             import tkinter
         except ImportError:
             yield 'require-tkinter'
+        try:
+            import docutils
+        except ImportError:
+            yield 'require-docutils'
         for exclude in self._platform_excludes:
             yield exclude
 
